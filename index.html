@@ -5,15 +5,15 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet"
-		href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 	<title>Fernando Balieiro Desenovlvedor Fullstack</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 	<link rel="stylesheet" href="src/style/style.css">
+	<script src="https://kit.fontawesome.com/c99a9ae526.js" crossorigin="anonymous"></script>
+	
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target=".navbar">
 	<!-- NAVBAR -->
 	<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
 		<div class="container flex-lg-column">
@@ -31,22 +31,22 @@
 						<a class="nav-link active" aria-current="page" href="#home">Home</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="#services">Serviços</a>
+						<a class="nav-link active" aria-current="page" href="#services">competências</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="#">Meu trabalho</a>
+						<a class="nav-link active" aria-current="page" href="#trabalho">Meu trabalho</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="#">Sobre mim</a>
+						<a class="nav-link active" aria-current="page" href="#about">Sobre mim</a>
 					</li>
-					<li class="nav-item">
+					<!-- <li class="nav-item">
 						<a class="nav-link active" aria-current="page" href="#">Analises</a>
-					</li>
+					</li> -->
 					<!-- <li class="nav-item">
 						<a class="nav-link active" aria-current="page" href="#">Blog</a>
 					</li> -->
 					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="#">Contate-me</a>
+						<a class="nav-link active" aria-current="page" href="#contact">Contate-me</a>
 					</li>
 				</ul>
 			</div>
@@ -56,25 +56,235 @@
 
 
 	<!-- CONTENT HOLDER -->
-	<div id="content-holder" class="full-height px-lg-5">
-		<!-- home -->
-		<section id="home">
+	<div id="content-holder">
+		<!-- HOME -->
+		<section id="home" class="full-height px-lg-5">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-8">
 						<h1 class="display-4 fw-bold">
-							SOU UM <span class="text-brand">DESENVOLVEDOR FULLSTACK</span> DE RIBEIRÃO PRETO, BRAZIL
+							SOU UM <span class="text-brand">DESENVOLVEDOR FULLSTACK</span> DE
+							RIBEIRÃO PRETO, BRAZIL
 						</h1>
-						<p class="lead">
+						<p class="lead mt-2 mb-4">
 							Sou Fernando Balieiro Ferreira, eu adoro criar aplicações web, estudar e rock and roll
 						</p>
-						<a href="#work">Explore meu trabalho</a>
+						<a href="#work" class="btn btn-brand me-3">Explore meu trabalho</a>
 						<a href="#" class="link-custom">Contato: (16) 98217-6656</a>
 					</div>
 				</div>
 			</div>
 		</section>
-		<!-- /home -->
+
+		<!-- /HOME -->
+
+		<!-- SERVICES -->
+		<section id="services" class="full-height px-lg-5">
+			<div class="container">
+				<div class="row pb-4">
+					<div class="col-lg-8">
+						<h6 class="text-brand">COMPETÊNCIAS</h6>
+						<h1>Habilidades que Posso Oferecer</h1>
+					</div>
+				</div>
+
+				<div class="row gy-4">
+					<div class="col-md-4">
+						<div class="service p-4 bg-base rounded-4 shadow-effect">
+							<div class="iconbox rounded-4">
+								<i class="fa-solid fa-code"></i>
+							</div>
+							<h4 class="mt-4 mb-2">Desenvolvimento Web</h4>
+							<p>Eu desenvolvo aplicações web com rapidez e eficácia</p>
+							<a href="" class="link-custom">Leia mais</a>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="service p-4 bg-base rounded-4 shadow-effect">
+							<div class="iconbox rounded-4">
+								<i class="fa-solid fa-display"></i>
+							</div>
+							<h4 class="mt-4 mb-2">Desenvolvimento back-end</h4>
+							<p>Consigo trabalhar com várias tecnologias com alta performance e precisão</p>
+							<a href="" class="link-custom">Leia mais</a>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="service p-4 bg-base rounded-4 shadow-effect">
+							<div class="iconbox rounded-4">
+								<i class="fa-solid fa-book"></i>
+							</div>
+							<h4 class="mt-4 mb-2">Rapidez no aprendizado</h4>
+							<p>Aprendo de forma rápida e com certeza serei um membro valioso da sua equipe</p>
+							<a href="" class="link-custom">Leia mais</a>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		</section>
+		<!-- /SERVICES -->
+
+		<!-- TRABALHOS RECENTES -->
+
+		<section id="trabalho" class="full-height px-lg-5">
+			<div class="container">
+
+				<div class="row pb-4">
+					<div class="col-lg-8">
+						<h6 class="text-brand">TRABALHOS RECENTES</h6>
+						<h1>Meus Projetos Recentes</h1>
+					</div>
+				</div>
+
+				<div class="row gy-4">
+					<div class="col-md-6">
+						<div class="card-custom rounded-4 bg-base shadow-effect">
+							<div class="card-custom-image rounded-4">
+								<img class="rounded 4" src="src/img/projeto-jogo-do-porco.png" alt="Imagem do jogo do porco">
+							</div>
+							<div class="card-custom-content p-4">
+								<h4>Jogo do porco</h4>
+								<p>Uma versão reimaginada do clássico jogo de baralho, "Porco" </p>
+								<a href="https://dulcet-vacherin-63a276.netlify.app/" class="link-custom">Leia mais</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card-custom rounded-4 bg-base shadow-effect">
+							<div class="card-custom-image rounded-4">
+								<img class="rounded 4" src="src/img/projeto-numero.png" alt="Imagem do jogo 'Adivinhe meu número'">
+							</div>
+							<div class="card-custom-content p-4">
+								<h4>Jogo "Adivinhe meu número"</h4>
+								<p>Um jogo onde o objetivo é adivinhar o número escolhido aleatoriamente</p>
+								<a href="https://luminous-fudge-168802.netlify.app/" class="link-custom">Leia mais</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card-custom rounded-4 bg-base shadow-effect">
+							<div class="card-custom-image rounded-4">
+								<img class="rounded 4" src="src/img/projeto-construção.jpg" alt="Imagem Loja de construção">
+							</div>
+							<div class="card-custom-content p-4">
+								<h4>Projeto Construção</h4>
+								<p>Um software de gerenciamento de uma loja de construção feito em Java</p>
+								<a href="https://github.com/Fernandounuts/ConstruReges" class="link-custom">Leia mais</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<!-- /TRABALHOS RECENTES -->
+		
+		<!-- SOBRE MIM -->
+		<section id="about" class="full-height px-lg-5">
+			<div class="container">
+				<div class="row pb-4">
+					<div class="col-lg-8">
+						<h6 class="text-brand">SOBRE MIM</h6>
+						<h1>Minha educação &amp; Experiências</h1>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-6">
+						<h3>Experiências</h3>
+						<div class="row gy-4">
+							<div class="col-12">
+								<div class="bg-base p-4 rounded-4 shadow-effect">
+									<h5>Estudando Análise e Desenvolvimento de Sistemas</h5>
+									<p class="text-brand">Faculdade Reges de Ribeirão Preto</p>
+									<p>Estudando Análise e Desenvolvimento de Sistemas com previsão de me graduar em 2024</p>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="col-lg-6">
+						<h3>Educação</h3>
+						<div class="row gy-4">
+							<div class="col-12">
+								<div class="bg-base p-4 rounded-4 shadow-effect">
+									<h5>Assistente administrativo</h5>
+									<p class="text-brand">Aura Connect</p>
+									<p>Em meu emprego atual, eu desempenho funções fundamentais para o bom
+										funcionamento operacional da empresa.</p>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /SOBRE MIM -->
+
+		<!-- CONTATE-ME -->
+
+		<section id="contact" class="full-height px-lg-5">
+			<div class="container">
+
+				<div class="row justify-content-center text-center">
+					<div class="col-lg-8 pb-4">
+						<h6 class="text-brand">CONTATE-ME</h6>
+						<h1>Interessado em trabalharmos juntos? Vamos conversar</h1>
+					</div>
+
+					<div class="col-lg-8">
+						<form action="https://formsubmit.co/fernandobalieiro.contato@outlook.com" method="POST" class="row g-lg-3 gy-3">
+							<div class="form-group col-md-6">
+								<input type="text" name="name" class="form-control" placeholder="Digite o seu nome:">
+							</div>
+							<div class="form-group col-md-6">
+								<input type="email" name="email" class="form-control" placeholder="Digite o seu email:">
+							</div>
+							<div class="form-group col-12">
+								<input type="text" name="assunto" class="form-control" placeholder="Insira o assunto:">
+							</div>
+							<div class="form-group col-12">
+								<textarea class="form-control" placeholder="Digite a sua mensagem:" name="message" id="" cols="30" rows="4"></textarea>
+							</div>
+							<div class="form-group col-12">
+								<button type="submit" class="btn btn-brand">Contate-me</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- /CONTATE-ME -->
+
+		<!-- FOOTER -->
+		<footer class="py-5 px-lg-5">
+			<div class="container">
+				<div class="row gy-4 justify-content-between">
+					<div class="col-auto">
+						<p class="mb-0">Minhas redes sociais:</p>
+					</div>
+
+					<div class="col-auto">
+						<div class="social-icons">
+							<a href="https://www.linkedin.com/in/fernando-balieiro-ferreira-1038a3236/"><i class="fa-brands fa-linkedin"></i></a>
+							<a href="https://github.com/Fernandounuts"><i class="fa-brands fa-github"></i></a>
+							<a href="https://www.instagram.com/balieiro_fernando/"><i class="fa-brands fa-instagram"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- /FOOTER -->
 	</div>
 	<!-- /CONTENT HOLDER -->
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -83,9 +293,6 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
 		integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
 		crossorigin="anonymous"></script>
-	<script>
-		AOS.init();
-	</script>
 </body>
 
 </html>
